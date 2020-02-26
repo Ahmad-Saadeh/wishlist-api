@@ -1,6 +1,5 @@
-from django.shortcuts import render
 from .serializers import UserCreateSerializer,ItemListSerializer,ItemDetailSerializer
-from items.models import Item, FavoriteItem
+from items.models import Item
 from rest_framework.generics import CreateAPIView,ListAPIView,RetrieveAPIView
 from api.permissions import IsStaffOrWhoAdded
 from rest_framework.filters import OrderingFilter,SearchFilter
